@@ -12,9 +12,22 @@
 
 ---
 
+## 🔑 **NASA API Access**
+
+This project uses NASA's free APIs for real-time asteroid data. Get your free API key instantly:
+
+**[🌌 Get Your NASA API Key →](https://api.nasa.gov/)**
+
+- ✅ **Free** - No cost, no credit card required
+- ✅ **Instant** - Get your key in seconds
+- ✅ **Unlimited** - No usage limits for personal projects
+- ✅ **Official** - Direct from NASA's official API portal
+
+---
+
 ## **Why I Built This Project**
 
-From a young age, I've been Curiouse of the mysteries of space. The vastness of the cosmos, the dance of celestial bodies, and the potential threats lurking in the darkness have always fascinated me. This curiosity led me to explore astronomy, orbital mechanics, and the incredible work being done by space agencies worldwide.
+From a young age, I've been captivated by the mysteries of space. The vastness of the cosmos, the dance of celestial bodies, and the potential threats lurking in the darkness have always fascinated me. This curiosity led me to explore astronomy, orbital mechanics, and the incredible work being done by space agencies worldwide.
 
 As I delved deeper into space science, I discovered the power of artificial intelligence in processing vast amounts of astronomical data. Machine learning algorithms could identify patterns in asteroid trajectories, predict close approaches, and assess impact risks with unprecedented accuracy.
 
@@ -103,6 +116,8 @@ The **Asteroid Impact Predictor** is a full-stack web application that leverages
 - Node.js 16+ and npm
 - Python 3.11+
 - NASA API key (free from [api.nasa.gov](https://api.nasa.gov))
+
+> **🔑 Get Your Free NASA API Key**: Visit [https://api.nasa.gov/](https://api.nasa.gov/) to generate your free API key in seconds. No registration required - just provide your email and you'll receive your key immediately!
 
 ### **Installation**
 
@@ -294,9 +309,6 @@ I welcome contributions! Please feel free to:
 4. Add tests if applicable
 5. Submit a pull request
 
-## **License**
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## **Acknowledgments**
 
