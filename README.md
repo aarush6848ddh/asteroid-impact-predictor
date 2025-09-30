@@ -16,7 +16,7 @@
 
 This project uses NASA's free APIs for real-time asteroid data. You can get access for your free instantly:
 
-**[NASA API's→](https://api.nasa.gov/)**
+**[NASA API's](https://api.nasa.gov/)**
 
 ---
 
