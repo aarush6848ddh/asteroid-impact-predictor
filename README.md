@@ -1,4 +1,4 @@
-# 🚀 Asteroid Impact Predictor
+# Asteroid Impact Predictor
 
 <div align="center">
 
@@ -14,7 +14,7 @@
 
 ## 🌟 **Why I Built This Project**
 
-From a young age, I've been captivated by the mysteries of space. The vastness of the cosmos, the dance of celestial bodies, and the potential threats lurking in the darkness have always fascinated me. This curiosity led me to explore astronomy, orbital mechanics, and the incredible work being done by space agencies worldwide.
+From a young age, I've been Curiouse of the mysteries of space. The vastness of the cosmos, the dance of celestial bodies, and the potential threats lurking in the darkness have always fascinated me. This curiosity led me to explore astronomy, orbital mechanics, and the incredible work being done by space agencies worldwide.
 
 As I delved deeper into space science, I discovered the power of artificial intelligence in processing vast amounts of astronomical data. Machine learning algorithms could identify patterns in asteroid trajectories, predict close approaches, and assess impact risks with unprecedented accuracy.
 
@@ -26,12 +26,12 @@ The **Asteroid Impact Predictor** is a full-stack web application that leverages
 
 ### **Key Features**
 
-- 🔮 **AI-Powered Risk Assessment** - Machine learning models analyze asteroid characteristics to predict impact probabilities
-- 📊 **Advanced Visualizations** - Interactive 3D plots, animated timelines, and statistical charts powered by Plotly
-- 🌍 **Real-Time Data** - Live integration with NASA APIs for current asteroid data and orbital predictions
-- 🚀 **Orbital Mechanics** - Precise calculations using NASA's Horizons ephemeris system
-- 🧠 **Machine Learning** - Advanced ML algorithms trained on historical asteroid data
-- ✨ **Interactive Experience** - Modern web interface with smooth animations and responsive design
+- **AI-Powered Risk Assessment** - Machine learning models analyze asteroid characteristics to predict impact probabilities
+- **Advanced Visualizations** - Interactive 3D plots, animated timelines, and statistical charts powered by Plotly
+- **Real-Time Data** - Live integration with NASA APIs for current asteroid data and orbital predictions
+- **Orbital Mechanics** - Precise calculations using NASA's Horizons ephemeris system
+- **Machine Learning** - Advanced ML algorithms trained on historical asteroid data
+- **Interactive Experience** - Modern web interface with smooth animations and responsive design
 
 ## 🛠️ **Technologies Used**
 
@@ -60,7 +60,7 @@ The **Asteroid Impact Predictor** is a full-stack web application that leverages
 
 ### **Data Sources & APIs**
 
-![NASA NEO](https://img.shields.io/badge/NASA%20NEO%20API-Near%20Earth%20Objects-00A0DC?style=for-the-badge&logo=nasa&logoColor=white)
+![NASA NEOWS](https://img.shields.io/badge/NASA%20NEO%20API-Near%20Earth%20Objects-00A0DC?style=for-the-badge&logo=nasa&logoColor=white)
 ![NASA HORIZONS](https://img.shields.io/badge/NASA%20HORIZONS-Solar%20System%20Dynamics-00A0DC?style=for-the-badge&logo=nasa&logoColor=white)
 ![JPL](https://img.shields.io/badge/JPL-Jet%20Propulsion%20Laboratory-00A0DC?style=for-the-badge&logo=nasa&logoColor=white)
 
@@ -305,19 +305,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Open source community** for the amazing libraries and tools
 - **Space science community** for the inspiration and knowledge
 
-## 📞 **Contact**
-
-**Aarush Singh**
-- GitHub: [@your-username](https://github.com/your-username)
-- Email: your.email@example.com
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/your-profile)
-
 ---
 
 <div align="center">
 
 **Built with ❤️ and a passion for space science**
-
-*"The cosmos is within us. We are made of star-stuff. We are a way for the universe to know itself."* - Carl Sagan
 
 </div>
