@@ -12,16 +12,11 @@
 
 ---
 
-## 🔑 **NASA API Access**
+## **NASA API Access**
 
-This project uses NASA's free APIs for real-time asteroid data. Get your free API key instantly:
+This project uses NASA's free APIs for real-time asteroid data. You can get access for your free instantly:
 
-**[🌌 Get Your NASA API Key →](https://api.nasa.gov/)**
-
-- ✅ **Free** - No cost, no credit card required
-- ✅ **Instant** - Get your key in seconds
-- ✅ **Unlimited** - No usage limits for personal projects
-- ✅ **Official** - Direct from NASA's official API portal
+**[NASA API's→](https://api.nasa.gov/)**
 
 ---
 
