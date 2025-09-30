@@ -1,0 +1,28 @@
+{
+  "name": "asteroid-impact-predictor",
+  "version": "1.0.0",
+  "description": "A full-stack ML/AI application for monitoring near-Earth asteroids with 3D visualization",
+  "scripts": {
+    "dev:backend": "cd backend && source venv/bin/activate && python app.py",
+    "dev:frontend": "cd frontend && npm run dev",
+    "install:backend": "cd backend && python -m venv venv && source venv/bin/activate && pip install -r requirements.txt",
+    "install:frontend": "cd frontend && npm install",
+    "build:frontend": "cd frontend && npm run build"
+  },
+  "keywords": [
+    "asteroid",
+    "nasa",
+    "machine-learning",
+    "3d-visualization",
+    "react",
+    "flask",
+    "three.js"
+  ],
+  "author": "Asteroid Impact Predictor Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/asteroid-impact-predictor.git"
+  }
+}
+
