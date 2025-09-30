@@ -12,7 +12,7 @@
 
 ---
 
-## 🌟 **Why I Built This Project**
+## **Why I Built This Project**
 
 From a young age, I've been Curiouse of the mysteries of space. The vastness of the cosmos, the dance of celestial bodies, and the potential threats lurking in the darkness have always fascinated me. This curiosity led me to explore astronomy, orbital mechanics, and the incredible work being done by space agencies worldwide.
 
@@ -20,7 +20,7 @@ As I delved deeper into space science, I discovered the power of artificial inte
 
 This intersection of space science and AI became my passion. I wanted to create something that could make this complex data accessible to everyone, while showcasing the incredible capabilities of modern space technology and machine learning.
 
-## 🎯 **Project Overview**
+## **Project Overview**
 
 The **Asteroid Impact Predictor** is a full-stack web application that leverages NASA's cutting-edge APIs to provide real-time asteroid monitoring, AI-powered risk assessment, and stunning 3D visualizations. Built with modern web technologies and machine learning, it brings professional-grade space science to your browser.
 
@@ -33,46 +33,46 @@ The **Asteroid Impact Predictor** is a full-stack web application that leverages
 - **Machine Learning** - Advanced ML algorithms trained on historical asteroid data
 - **Interactive Experience** - Modern web interface with smooth animations and responsive design
 
-## 🛠️ **Technologies Used**
+## **Technologies Used**
 
 <div align="center">
 
 ### **Frontend Technologies**
 
-![REACT](https://img.shields.io/badge/REACT-18.2.0-61DAFB?style=for-the-badge&logo=react&logoColor=white)
-![TYPESCRIPT](https://img.shields.io/badge/TYPESCRIPT-4.9.0-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![VITE](https://img.shields.io/badge/VITE-4.4.5-646CFF?style=for-the-badge&logo=vite&logoColor=white)
-![TAILWIND CSS](https://img.shields.io/badge/TAILWIND%20CSS-3.3.3-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
-![FRAMER MOTION](https://img.shields.io/badge/FRAMER%20MOTION-10.18.0-0055FF?style=for-the-badge&logo=framer&logoColor=white)
-![THREE.JS](https://img.shields.io/badge/THREE.JS-0.156.1-000000?style=for-the-badge&logo=three.js&logoColor=white)
-![PLOTLY](https://img.shields.io/badge/PLOTLY-3.1.1-3F4F75?style=for-the-badge&logo=plotly&logoColor=white)
-![AXIOS](https://img.shields.io/badge/AXIOS-1.5.0-5A29E4?style=for-the-badge&logo=axios&logoColor=white)
+![REACT](https://img.shields.io/badge/REACT-18.2.0-61DAFB?style=for-the-badge&logo=react&logoColor=white&labelColor=000000)
+![TYPESCRIPT](https://img.shields.io/badge/TYPESCRIPT-4.9.0-3178C6?style=for-the-badge&logo=typescript&logoColor=white&labelColor=000000)
+![VITE](https://img.shields.io/badge/VITE-4.4.5-646CFF?style=for-the-badge&logo=vite&logoColor=white&labelColor=000000)
+![TAILWIND CSS](https://img.shields.io/badge/TAILWIND%20CSS-3.3.3-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white&labelColor=000000)
+![FRAMER MOTION](https://img.shields.io/badge/FRAMER%20MOTION-10.18.0-0055FF?style=for-the-badge&logo=framer&logoColor=white&labelColor=000000)
+![THREE.JS](https://img.shields.io/badge/THREE.JS-0.156.1-000000?style=for-the-badge&logo=three.js&logoColor=white&labelColor=61DAFB)
+![PLOTLY](https://img.shields.io/badge/PLOTLY-3.1.1-3F4F75?style=for-the-badge&logo=plotly&logoColor=white&labelColor=000000)
+![AXIOS](https://img.shields.io/badge/AXIOS-1.5.0-5A29E4?style=for-the-badge&logo=axios&logoColor=white&labelColor=000000)
 
 ### **Backend Technologies**
 
-![PYTHON](https://img.shields.io/badge/PYTHON-3.11-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![FLASK](https://img.shields.io/badge/FLASK-2.3.3-000000?style=for-the-badge&logo=flask&logoColor=white)
-![SCIKIT-LEARN](https://img.shields.io/badge/SCIKIT--LEARN-1.3.0-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
-![NUMPY](https://img.shields.io/badge/NUMPY-1.26.4-013243?style=for-the-badge&logo=numpy&logoColor=white)
-![PANDAS](https://img.shields.io/badge/PANDAS-2.0+-150458?style=for-the-badge&logo=pandas&logoColor=white)
-![JOBLIB](https://img.shields.io/badge/JOBLIB-1.3.2-FF6B6B?style=for-the-badge&logo=joblib&logoColor=white)
-![REQUESTS](https://img.shields.io/badge/REQUESTS-2.31.0-000000?style=for-the-badge&logo=requests&logoColor=white)
+![PYTHON](https://img.shields.io/badge/PYTHON-3.11-3776AB?style=for-the-badge&logo=python&logoColor=white&labelColor=000000)
+![FLASK](https://img.shields.io/badge/FLASK-2.3.3-000000?style=for-the-badge&logo=flask&logoColor=white&labelColor=FF6B6B)
+![SCIKIT-LEARN](https://img.shields.io/badge/SCIKIT--LEARN-1.3.0-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white&labelColor=000000)
+![NUMPY](https://img.shields.io/badge/NUMPY-1.26.4-013243?style=for-the-badge&logo=numpy&logoColor=white&labelColor=000000)
+![PANDAS](https://img.shields.io/badge/PANDAS-2.0+-150458?style=for-the-badge&logo=pandas&logoColor=white&labelColor=000000)
+![JOBLIB](https://img.shields.io/badge/JOBLIB-1.3.2-FF6B6B?style=for-the-badge&logo=joblib&logoColor=white&labelColor=000000)
+![REQUESTS](https://img.shields.io/badge/REQUESTS-2.31.0-000000?style=for-the-badge&logo=requests&logoColor=white&labelColor=FF6B6B)
 
 ### **Data Sources & APIs**
 
-![NASA NEOWS](https://img.shields.io/badge/NASA%20NEO%20API-Near%20Earth%20Objects-00A0DC?style=for-the-badge&logo=nasa&logoColor=white)
-![NASA HORIZONS](https://img.shields.io/badge/NASA%20HORIZONS-Solar%20System%20Dynamics-00A0DC?style=for-the-badge&logo=nasa&logoColor=white)
-![JPL](https://img.shields.io/badge/JPL-Jet%20Propulsion%20Laboratory-00A0DC?style=for-the-badge&logo=nasa&logoColor=white)
+![NASA NEOWS](https://img.shields.io/badge/NASA%20NEO%20API-Near%20Earth%20Objects-00A0DC?style=for-the-badge&logo=nasa&logoColor=white&labelColor=000000)
+![NASA HORIZONS](https://img.shields.io/badge/NASA%20HORIZONS-Solar%20System%20Dynamics-00A0DC?style=for-the-badge&logo=nasa&logoColor=white&labelColor=000000)
+![JPL](https://img.shields.io/badge/JPL-Jet%20Propulsion%20Laboratory-00A0DC?style=for-the-badge&logo=nasa&logoColor=white&labelColor=000000)
 
 ### **Development Tools**
 
-![ESLINT](https://img.shields.io/badge/ESLINT-8.45.0-4B32C3?style=for-the-badge&logo=eslint&logoColor=white)
-![POSTCSS](https://img.shields.io/badge/POSTCSS-8.4.29-DD3A0A?style=for-the-badge&logo=postcss&logoColor=white)
-![AUTOPREFIXER](https://img.shields.io/badge/AUTOPREFIXER-10.4.15-000000?style=for-the-badge&logo=autoprefixer&logoColor=white)
+![ESLINT](https://img.shields.io/badge/ESLINT-8.45.0-4B32C3?style=for-the-badge&logo=eslint&logoColor=white&labelColor=000000)
+![POSTCSS](https://img.shields.io/badge/POSTCSS-8.4.29-DD3A0A?style=for-the-badge&logo=postcss&logoColor=white&labelColor=000000)
+![AUTOPREFIXER](https://img.shields.io/badge/AUTOPREFIXER-10.4.15-000000?style=for-the-badge&logo=autoprefixer&logoColor=white&labelColor=FF6B6B)
 
 </div>
 
-## 🏗️ **Architecture**
+## **Architecture**
 
 ### **Frontend (React + Vite)**
 - **React 18** with modern hooks and functional components
@@ -97,7 +97,7 @@ The **Asteroid Impact Predictor** is a full-stack web application that leverages
 - **Standard Scaler** for feature normalization
 - **Enhanced synthetic data generation** based on real NASA statistics
 
-## 🚀 **Getting Started**
+## **Getting Started**
 
 ### **Prerequisites**
 - Node.js 16+ and npm
@@ -147,7 +147,7 @@ cd frontend
 6. **Open your browser**
    Navigate to `http://localhost:3000` (or the port shown in terminal)
 
-## 📊 **Features Deep Dive**
+## **Features Deep Dive**
 
 ### **1. AI-Powered Risk Assessment**
 - Machine learning models trained on historical asteroid data
@@ -212,7 +212,7 @@ if miss_distance < 0.05 AU: risk_score += 4
 # ... additional factors
 ```
 
-## 🌐 **API Endpoints**
+## **API Endpoints**
 
 ### **Asteroid Data**
 - `GET /asteroids` - Fetch asteroid data for date range
@@ -237,7 +237,7 @@ if miss_distance < 0.05 AU: risk_score += 4
 - `GET /health` - Health check endpoint
 - `GET /planets` - Planetary positions from Horizons API
 
-## 🎨 **UI/UX Features**
+## **UI/UX Features**
 
 - **Responsive Design** - Works on desktop, tablet, and mobile
 - **Dark Theme** - Space-appropriate dark color scheme
@@ -247,7 +247,7 @@ if miss_distance < 0.05 AU: risk_score += 4
 - **Error Handling** - User-friendly error messages
 - **Accessibility** - WCAG compliant design
 
-## 📱 **Pages & Navigation**
+## **Pages & Navigation**
 
 1. **Homepage** - Project introduction and motivation
 2. **Asteroid Browser** - Searchable list of asteroids
@@ -255,7 +255,7 @@ if miss_distance < 0.05 AU: risk_score += 4
 4. **Advanced Visualizations** - Interactive data visualizations
 5. **Data Guide** - Educational content about space data
 
-## 🔧 **Development**
+## **Development**
 
 ### **Project Structure**
 ```
@@ -284,7 +284,7 @@ asteroid-impact-predictor/
 - Comprehensive error handling
 - Clean, documented code
 
-## 🤝 **Contributing**
+## **Contributing**
 
 I welcome contributions! Please feel free to:
 
@@ -294,11 +294,11 @@ I welcome contributions! Please feel free to:
 4. Add tests if applicable
 5. Submit a pull request
 
-## 📄 **License**
+## **License**
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 **Acknowledgments**
+## **Acknowledgments**
 
 - **NASA** for providing the incredible NeoWS and Horizons APIs
 - **JPL** (Jet Propulsion Laboratory) for the precise orbital mechanics data
