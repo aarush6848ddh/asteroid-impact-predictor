@@ -1,8 +1,9 @@
-/* Custom styles for the app */
+/* Custom styles for the app - Ultra-modern design system */
 
-/* Loading animations */
+/* Enhanced loading animations */
 .loading-dots {
   display: inline-block;
+  position: relative;
 }
 
 .loading-dots::after {
@@ -17,21 +18,153 @@
   80%, 100% { content: '...'; }
 }
 
-/* Scrollbar styling */
+/* Cosmic particle effects */
+.cosmic-particle {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.8), transparent);
+  border-radius: 50%;
+  animation: particle-float 15s linear infinite;
+}
+
+/* Enhanced scrollbar styling */
 ::-webkit-scrollbar {
   width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: rgba(15, 23, 42, 0.5);
-}
-
-::-webkit-scrollbar-thumb {
-  background: rgba(59, 130, 246, 0.5);
+  background: rgba(15, 23, 42, 0.3);
   border-radius: 4px;
 }
 
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #38bdf8, #0ea5e9);
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(56, 189, 248, 0.3);
+}
+
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(59, 130, 246, 0.7);
+  background: linear-gradient(180deg, #0ea5e9, #0284c7);
+  box-shadow: 0 0 15px rgba(56, 189, 248, 0.5);
+}
+
+/* Selection styling */
+::selection {
+  background: rgba(56, 189, 248, 0.3);
+  color: white;
+}
+
+::-moz-selection {
+  background: rgba(56, 189, 248, 0.3);
+  color: white;
+}
+
+/* Focus styles for accessibility */
+*:focus {
+  outline: 2px solid rgba(56, 189, 248, 0.5);
+  outline-offset: 2px;
+}
+
+/* Smooth transitions for all interactive elements */
+button, a, input, select, textarea {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Enhanced glass morphism effects */
+.glass-enhanced {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 
+    0 8px 32px 0 rgba(31, 38, 135, 0.37),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.1);
+}
+
+/* Neon glow effects */
+.neon-glow {
+  box-shadow: 
+    0 0 5px currentColor,
+    0 0 10px currentColor,
+    0 0 15px currentColor,
+    0 0 20px currentColor;
+}
+
+.neon-glow-intense {
+  box-shadow: 
+    0 0 10px currentColor,
+    0 0 20px currentColor,
+    0 0 30px currentColor,
+    0 0 40px currentColor;
+}
+
+/* Cosmic gradient animations */
+.cosmic-gradient {
+  background: linear-gradient(135deg, #020617 0%, #0f172a 25%, #334155 50%, #1e293b 75%, #020617 100%);
+  background-size: 400% 400%;
+  animation: gradient-shift 20s ease infinite;
+}
+
+/* Enhanced text shadows */
+.text-shadow-cosmic {
+  text-shadow: 
+    0 0 10px rgba(56, 189, 248, 0.5),
+    0 0 20px rgba(56, 189, 248, 0.3),
+    0 0 30px rgba(56, 189, 248, 0.1);
+}
+
+.text-shadow-stellar {
+  text-shadow: 
+    0 0 10px rgba(217, 70, 239, 0.5),
+    0 0 20px rgba(217, 70, 239, 0.3),
+    0 0 30px rgba(217, 70, 239, 0.1);
+}
+
+.text-shadow-aurora {
+  text-shadow: 
+    0 0 10px rgba(16, 185, 129, 0.5),
+    0 0 20px rgba(16, 185, 129, 0.3),
+    0 0 30px rgba(16, 185, 129, 0.1);
+}
+
+/* Responsive design enhancements */
+@media (max-width: 768px) {
+  .glass-enhanced {
+    backdrop-filter: blur(10px) saturate(150%);
+  }
+  
+  .cosmic-gradient {
+    background-size: 200% 200%;
+  }
+}
+
+/* Performance optimizations */
+.will-change-transform {
+  will-change: transform;
+}
+
+.will-change-opacity {
+  will-change: opacity;
+}
+
+.transform-gpu {
+  transform: translateZ(0);
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .glass, .glass-dark, .glass-intense {
+    background: rgba(0, 0, 0, 0.8);
+    border: 2px solid rgba(255, 255, 255, 0.8);
+  }
 }
 

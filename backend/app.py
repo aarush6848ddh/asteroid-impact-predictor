@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, send_from_directory
 from flask_cors import CORS
 import requests
 import os
@@ -16,8 +16,12 @@ from plotly_visualizations import PlotlyVisualizations
 import logging
 from config import NASA_API_KEY, NASA_BASE_URL, CACHE_DURATION, MODEL_CONFIDENCE_THRESHOLD
 
-app = Flask(__name__)
+# Serve frontend static files in production
+app = Flask(__name__, static_folder='../frontend/dist', static_url_path='')
 CORS(app)
+
+# Railway configuration
+PORT = int(os.environ.get('PORT', 5000))
 
 # Initialize visualization services
 plotly_viz = PlotlyVisualizations()
@@ -1181,9 +1185,30 @@ def get_polar_chart():
         logger.error(f"Error creating polar chart: {e}")
         return jsonify({"error": str(e)}), 500
 
+# Health check endpoint for Railway
+@app.route('/health')
+def health_check():
+    return jsonify({"status": "healthy", "timestamp": datetime.now().isoformat()})
+
+# Serve React app
+@app.route('/')
+@app.route('/<path:path>')
+def serve_frontend(path='index.html'):
+    """Serve the React frontend"""
+    try:
+        # If it's a file (has extension), serve it
+        if '.' in path:
+            return send_from_directory(app.static_folder, path)
+        # Otherwise serve index.html for React Router
+        return send_from_directory(app.static_folder, 'index.html')
+    except Exception:
+        # Fallback to index.html for client-side routing
+        return send_from_directory(app.static_folder, 'index.html')
+
 if __name__ == '__main__':
     # Initialize ML models
     load_or_train_models()
     
     # Run the Flask app
-    app.run(debug=True, host='0.0.0.0', port=5001)
+    debug_mode = os.environ.get('ENVIRONMENT') != 'production'
+    app.run(debug=debug_mode, host='0.0.0.0', port=PORT)

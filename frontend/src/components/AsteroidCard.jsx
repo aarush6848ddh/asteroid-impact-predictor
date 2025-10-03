@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { Calendar, Zap, AlertTriangle, Shield, ExternalLink } from 'lucide-react'
+import { Calendar, Zap, AlertTriangle, Shield, ExternalLink, Target, Activity, TrendingUp } from 'lucide-react'
 import { format } from 'date-fns'
 
 const AsteroidCard = ({ asteroid }) => {
@@ -56,76 +56,122 @@ const AsteroidCard = ({ asteroid }) => {
 
   return (
     <motion.div
-      whileHover={{ y: -5, scale: 1.02 }}
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      whileHover={{ 
+        y: -8, 
+        scale: 1.02,
+        transition: { duration: 0.3 }
+      }}
       whileTap={{ scale: 0.98 }}
-      className="asteroid-card group"
+      className="cosmic-card group cursor-pointer"
     >
       {/* Header */}
-      <div className="flex items-start justify-between mb-4">
+      <div className="flex items-start justify-between mb-6">
         <div className="flex-1">
-          <h3 className="text-lg font-semibold text-white mb-1 group-hover:text-space-300 transition-colors">
+          <motion.h3 
+            className="text-xl font-bold text-white mb-3 group-hover:text-nebula-300 transition-colors duration-300"
+            whileHover={{ x: 5 }}
+          >
             {name}
-          </h3>
-          <div className={`risk-badge ${riskColor} inline-flex items-center space-x-1`}>
+          </motion.h3>
+          <motion.div 
+            className={`risk-badge ${riskColor} inline-flex items-center space-x-2`}
+            whileHover={{ scale: 1.05 }}
+          >
             {is_potentially_hazardous ? (
-              <AlertTriangle className="w-3 h-3" />
+              <AlertTriangle className="w-4 h-4" />
             ) : (
-              <Shield className="w-3 h-3" />
+              <Shield className="w-4 h-4" />
             )}
-            <span>{riskLevel} Risk</span>
-          </div>
+            <span className="font-semibold">{riskLevel} Risk</span>
+          </motion.div>
         </div>
-            <div className="flex items-center space-x-2">
-              {nasa_jpl_url && (
-                <a
-                  href={nasa_jpl_url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="opacity-80 group-hover:opacity-100 transition-all duration-300 px-3 py-1.5 text-xs font-medium bg-space-700 hover:bg-space-600 text-white hover:text-white rounded-md border border-space-600 hover:border-space-500 shadow-sm hover:shadow-md transform hover:scale-105"
-                  title="View on NASA JPL"
-                >
-                  <ExternalLink className="w-3 h-3 inline mr-1" />
-                  NASA JPL
-                </a>
-              )}
-            </div>
+        
+        <div className="flex items-center space-x-2">
+          {nasa_jpl_url && (
+            <motion.a
+              href={nasa_jpl_url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="glass-neon px-4 py-2 text-sm font-medium text-nebula-300 hover:text-white rounded-xl transition-all duration-300 flex items-center space-x-2"
+              title="View on NASA JPL"
+              whileHover={{ scale: 1.05, y: -2 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <ExternalLink className="w-4 h-4" />
+              <span>NASA JPL</span>
+            </motion.a>
+          )}
+        </div>
       </div>
 
-      {/* Details */}
-      <div className="space-y-3 mb-6">
-        <div className="flex items-center justify-between">
-          <span className="text-sm text-space-400">Approach Date</span>
-          <span className="text-sm text-white font-medium">{approachDate}</span>
-        </div>
-        
-        <div className="flex items-center justify-between">
-          <span className="text-sm text-space-400">Diameter</span>
-          <span className="text-sm text-white font-medium">
-            {diameterKm} km
-          </span>
-        </div>
-        
-        <div className="flex items-center justify-between">
-          <span className="text-sm text-space-400">Velocity</span>
-          <span className="text-sm text-white font-medium">
-            {velocity} km/s
-          </span>
-        </div>
-        
-        <div className="flex items-center justify-between">
-          <span className="text-sm text-space-400">Miss Distance</span>
-          <span className="text-sm text-white font-medium">
-            {missDistanceKm.toLocaleString()} km
-          </span>
-        </div>
-        
-        <div className="flex items-center justify-between">
-          <span className="text-sm text-space-400">Magnitude</span>
-          <span className="text-sm text-white font-medium">
-            H = {absolute_magnitude_h?.toFixed(1) || 'N/A'}
-          </span>
-        </div>
+      {/* Details Grid */}
+      <div className="grid grid-cols-2 gap-4 mb-8">
+        {[
+          { 
+            icon: Calendar, 
+            label: 'Approach Date', 
+            value: approachDate, 
+            color: 'nebula' 
+          },
+          { 
+            icon: Target, 
+            label: 'Diameter', 
+            value: `${diameterKm} km`, 
+            color: 'stellar' 
+          },
+          { 
+            icon: Zap, 
+            label: 'Velocity', 
+            value: `${velocity} km/s`, 
+            color: 'aurora' 
+          },
+          { 
+            icon: Activity, 
+            label: 'Miss Distance', 
+            value: `${missDistanceKm.toLocaleString()} km`, 
+            color: 'orange' 
+          }
+        ].map((item, index) => (
+          <motion.div
+            key={item.label}
+            className="glass rounded-xl p-4 group-hover:bg-white/10 transition-all duration-300"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: index * 0.1 }}
+            whileHover={{ scale: 1.05, y: -2 }}
+          >
+            <div className="flex items-center space-x-3">
+              <div className={`p-2 bg-gradient-to-br from-${item.color}-500/20 to-${item.color}-600/20 rounded-lg`}>
+                <item.icon className={`w-4 h-4 text-${item.color}-400`} />
+              </div>
+              <div className="flex-1 min-w-0">
+                <p className="text-xs text-cosmic-400 font-medium truncate">{item.label}</p>
+                <p className="text-sm text-white font-semibold truncate">{item.value}</p>
+              </div>
+            </div>
+          </motion.div>
+        ))}
       </div>
+
+      {/* Magnitude */}
+      <motion.div 
+        className="glass rounded-xl p-4 mb-6"
+        whileHover={{ scale: 1.02 }}
+      >
+        <div className="flex items-center space-x-3">
+          <div className="p-2 bg-gradient-to-br from-purple-500/20 to-purple-600/20 rounded-lg">
+            <TrendingUp className="w-4 h-4 text-purple-400" />
+          </div>
+          <div className="flex-1">
+            <p className="text-xs text-cosmic-400 font-medium">Absolute Magnitude</p>
+            <p className="text-sm text-white font-semibold">
+              H = {absolute_magnitude_h?.toFixed(1) || 'N/A'}
+            </p>
+          </div>
+        </div>
+      </motion.div>
 
       {/* Action Button */}
       <Link
@@ -133,12 +179,17 @@ const AsteroidCard = ({ asteroid }) => {
         className="block w-full"
       >
         <motion.button
-          whileHover={{ scale: 1.02 }}
+          whileHover={{ 
+            scale: 1.02, 
+            y: -2,
+            boxShadow: '0 0 20px rgba(56, 189, 248, 0.3)'
+          }}
           whileTap={{ scale: 0.98 }}
-          className="w-full py-3 px-4 bg-space-600 hover:bg-space-500 text-white font-medium rounded-lg transition-colors duration-300 flex items-center justify-center space-x-2"
+          className="btn-primary w-full py-4 px-6 text-lg font-semibold flex items-center justify-center space-x-3 group"
         >
-          <Zap className="w-4 h-4" />
+          <Target className="w-5 h-5 group-hover:rotate-12 transition-transform duration-300" />
           <span>View Details & Analysis</span>
+          <Zap className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
         </motion.button>
       </Link>
 
