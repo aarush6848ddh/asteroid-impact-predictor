@@ -6,8 +6,8 @@ const getApiBaseUrl = () => {
   if (import.meta.env.DEV) {
     return '/api'  // Proxy to localhost:5001
   }
-  // In production (Vercel), proxy to Railway backend
-  return '/api'  // Proxy to Railway backend via vercel.json
+  // In production (Vercel), proxy to Render backend
+  return '/api'  // Proxy to Render backend via vercel.json
 }
 
 const API_BASE_URL = getApiBaseUrl()
