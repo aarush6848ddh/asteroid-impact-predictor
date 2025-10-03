@@ -1,7 +1,7 @@
 import os
 
 # NASA API configuration
-NASA_API_KEY = "Lrk5zZ7XUhP82rH3cSCmhzWReWsH8KXDJdR6TgTu"
+NASA_API_KEY = os.getenv('NASA_API_KEY', 'NxA3JNRY3yPiOvMOPZbd2DChPDgrguLiKrunWeR5')
 NASA_BASE_URL = "https://api.nasa.gov/neo/rest/v1"
 
 # Flask configuration
