@@ -22,9 +22,6 @@ CORS(app)
 # Initialize visualization services
 plotly_viz = PlotlyVisualizations()
 
-# Initialize ML models on app startup
-load_or_train_models()
-
 # Configure logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -1185,10 +1182,10 @@ def get_polar_chart():
         return jsonify({"error": str(e)}), 500
 
 
+# Initialize ML models when the module is imported (for gunicorn)
+load_or_train_models()
+
 if __name__ == '__main__':
-    # Initialize ML models
-    load_or_train_models()
-    
     # Get port from environment variable (Render sets this)
     port = int(os.environ.get('PORT', 5001))
     
