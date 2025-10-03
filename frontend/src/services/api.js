@@ -1,16 +1,6 @@
 import axios from 'axios'
 
-// Dynamic API URL for production/development
-const getApiBaseUrl = () => {
-  // If we're in development, use local backend
-  if (import.meta.env.DEV) {
-    return 'http://localhost:5000/api'
-  }
-  // In production (Railway), we'll serve both frontend and backend from the same domain
-  return '/api'
-}
-
-const API_BASE_URL = getApiBaseUrl()
+const API_BASE_URL = '/api'
 
 const api = axios.create({
   baseURL: API_BASE_URL,
