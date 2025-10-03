@@ -12,7 +12,7 @@
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "https://asteroid-backend-150a7025896b.herokuapp.com/$1"
+      "dest": "https://asteroid-backend.onrender.com/$1"
     },
     {
       "src": "/(.*)",
