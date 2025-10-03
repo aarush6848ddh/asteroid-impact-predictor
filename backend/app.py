@@ -22,6 +22,9 @@ CORS(app)
 # Initialize visualization services
 plotly_viz = PlotlyVisualizations()
 
+# Initialize ML models on app startup
+load_or_train_models()
+
 # Configure logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
