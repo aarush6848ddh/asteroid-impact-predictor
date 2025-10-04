@@ -10,7 +10,7 @@
 
 ## **Live Site**
 
-**[Try the Asteroid Impact Predictor](https://asteroid-impact-predictor-lr1n5y5td-aarushs684-7927s-projects.vercel.app/)**
+**[Try the Asteroid Impact Predictor](http://asteroid-impact-predictor.vercel.app/)**
 
 
 </div>
